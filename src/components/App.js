@@ -7,7 +7,7 @@ import ChildComponent2 from "./ChildComponent2";
 const App = () => {
   const [selectedOption, setSelectedOption] = useState("")
   return (
-    <div style={{backgroundColor: "skyblue", padding: "15px"}}>
+    <div className="parent" style={{backgroundColor: "skyblue", padding: "15px"}}>
         <h1>Parent Component</h1>
         {/* Do not remove the main div */}
         <ChildComponent1 setSelectedOption={setSelectedOption}/>
